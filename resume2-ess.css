@@ -1,0 +1,33 @@
+.image-container {
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+  }
+  
+  .bottom-image {
+    display: block;
+    max-width: 100%; 
+    position: relative; 
+    z-index: 1; 
+  }
+  
+  .top-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 20px;
+    border: 2px solid #000;
+  }
+  
+  .header {
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    z-index: 3; 
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px 20px;
+  }
