@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="radresume.css">
+</head>
+<body>
+<div class="container">
+    <div class="header text-center">
+        <h1>Denae A. Sawyer</h1>
+        <p>3125 N Chambers Cr, Wichita, KS | Wichita, KS 67205<br>
+            (316)796-3912 | adrie.sawye@gmail.com | dxsawyer@shockers.wichita.edu</p>
+        <div class="header-image text-center">
+            <img src="pictures/impression desktop.jpg" alt="Header Image Impressionism Art" class="img-fluid">
+        </div>
+        <h3 class="blockquote">"Dead people receive more flowers than living ones because regret is stronger than gratitude."<cite> - Anne Frank</cite></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="content education text-center">
+                <h2 class="content-title">Education</h2>
+                <p>Master of Innovation Design - Present<br>
+                    Wichita State University, Wichita, KS</p>
+                <p>Bachelor of Honors in English, Marketing, Innovation Design - Magna Cum Laude<br>
+                    Wichita State University, Wichita, KS - GPA 3.7/4.0</p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="content internship text-center">
+                <h2 class="content-title">Internship/Volunteer Experience</h2>
+                <p>Dzanc Books Internship - Editorial Assistant - Spring 2023</p>
+                <p>Wichita Bar Association Internship - Public Defense - Summer 2019</p>
+                <p>CityArts - Arts Teacher Assistant - June 2014 – December 2018</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content work col-12 text-center">
+        <h2 class="content-title">Work Experience</h2>
+        <div class="work-experience text-center">
+        <h3>Graduate Assistant - Operations</h3>
+            <p>Wichita State University, Wichita, KS<br>
+            June 2023 – Present</p>
+            <ul class="no-bullets">
+                <li>Offering Operations Advice for the 501(c)3 nonprofit Club Parkinson’s, advising changes in business model and foundational structure.</li>
+                <li>Organizing staff structure to optimize efficiency in communication between staff and Board of Directors.</li>
+                <li>Corresponding with all branches of nonprofit to ensure efficiency with new business structure.</li>
+            </ul>
+        <h3>Resident Assistant</h3>
+            <p>Housing Residence Life, Wichita State University, Wichita, KS<br>
+            July 2021 – May 2023</p>
+            <ul class="no-bullets">
+                <li>Oversee a floor of 40-112 residents to ensure safety, communication from housing, and cooperation.</li>
+                <li>Organize monthly events to engage residents with learning, service, and creative activities.</li>
+                <li>Develop a team player environment among other RA’s to enhance resident experience.</li>
+            </ul>
+        <h3>Office Assistant</h3>
+            <p>Housing Residence Life, Wichita State University, Wichita, KS<br>
+            July 2021 – February 2023</p>
+            <ul class="no-bullets">
+                <li>Ensure safety in the buildings by manning the front desk.</li>
+                <li>Promote independence of students through FERPA privacy and Housing assistance.</li>
+                <li>Maintain organization, confidentiality, secretarial tasks, and communication as the first addressee for customer service concerns.</li>
+            </ul>
+        <h3>Musician, Performer</h3>
+            <p>Senior Care Homes, Wichita, KS<br>
+            June 2018 – October 2022</p>
+            <ul class="no-bullets">
+                <li>Apply intergenerational communication and interpersonal skills.</li>
+                <li>Dedicate practice to musical skills and apply creativity to create an artistic experience.</li>
+                <li>Perform outreach communication to locate new senior living home clients.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="d-grid gap-2">
+        <div class="btn btn-primary">
+            <button id="toggleButton" btn btn-outline-light>Toggle Image</button>
+            <img id="myImage" src="pictures/headshot - 2022.jpg" class="img-fluid" style="display: none;">
+        </div>
+        <div class="btn btn-primary">
+            <button id="colorButton" class="btn btn-outline-light color-toggle-button">Toggle Button Color</button>
+        </div>    
+    </div>
+
+    <div class="content activity col-12 text-left">
+        <h2 class="content-title">Activities</h2>
+        <ul class="activity-list no-bullets text-left">
+            <li>Scholarship Trip to NeoCon Conference - Summer 2022</li>
+            <li>Leadership Academy Scholarship Trip to Seattle - Summer 2022</li>
+            <li>Member, Mortar Board Honors Society - Spring 2022 – Present</li>
+            <li>Member, Honors College - Fall 2022 – Present</li>
+            <li>Small Group Leadership, Christian Challenge - Fall 2020 – Fall 2022</li>
+            <li>Recipient, DSI Semi-Final Scholarship - Spring 2020</li>
+            <li>Advertising for 2022-2023 RA application (RA Selection Committee) - Fall 2021</li>
+            <li>Residence Advocacy Delegation Executive Member - Fall 2020 – Spring of 2021</li>
+            <li>CliftonStrengths Ambassador - Fall 2021 – Spring 2022</li>
+            <li>Student Conduct & Community Standards - Student Employee of the Month - February 2023</li>
+            <li>Dean’s Honor Roll - Fall 2020 — Fall 2022</li>
+        </ul>
+    </div>
+
+    <div class="content footer col-12 text-center">
+        <h2>Connect with Me</h2>
+        <p>
+            <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile">LinkedIn</a>
+            <a href="mailto:adrie.sawye@gmail.com">Email Me</a>
+            <a href="https://www.instagram.com/denooooooosh/">Instagram</a>
+        </p>
+        <div id="submitPositionForm">
+            <label>Name of position you wish to fill:</label><br>
+            <input type="text" id="myText"><br>
+            <button type="button" id="myButton">Submit</button>
+        </div>
+    </div>
+    <div class="content sub-footer text-left">
+        <div id="timestamp-container"></div>                        
+    </div>
+</div>
+</body>
+<script src="radresume.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+</html>
