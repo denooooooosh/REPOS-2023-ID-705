@@ -8,18 +8,15 @@ button.addEventListener('click', function() {
 
 
 // toggle visibility of headshot image
-const toggleButton = document.getElementById("toggleButton");
-const myImage = document.getElementById("myImage");
-
-function toggleImage() {
-    if (myImage.hidden) {
-        myImage.hidden = false;
+function toggleHeadshot() {
+    const headshot = document.getElementById('headshot');
+    if (headshot.style.display === 'none' || headshot.style.display === '') {
+        headshot.style.display = 'block';
     } else {
-        myImage.hidden = true;
+        headshot.style.display = 'none';
     }
 }
 
-toggleButton.addEventListener("click", toggleImage);
 
 
 //function position = window.prompt("What position are you looking to fill?");
